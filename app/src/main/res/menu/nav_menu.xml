@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="true"
+        android:icon="@drawable/nav_icon1"
+        android:title="홈" />
+    <item
+        android:id="@+id/menu_talk"
+        android:enabled="true"
+        android:icon="@drawable/nav_icon2"
+        android:title="채팅" />
+    <item
+        android:id="@+id/menu_view"
+        android:enabled="true"
+        android:icon="@drawable/nav_icon3"
+        android:title="뷰" />
+    <item
+        android:id="@+id/menu_shop"
+        android:enabled="true"
+        android:icon="@drawable/nav_icon4"
+        android:title="쇼핑" />
+    <item
+        android:id="@+id/menu_user"
+        android:enabled="true"
+        android:icon="@drawable/nav_icon5"
+        android:title="더보기" />
+
+</menu>
