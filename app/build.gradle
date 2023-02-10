@@ -60,5 +60,11 @@ dependencies {
     // 글라이드 - 이미지 처리
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
-
+    // 리사이클러뷰 expandable 라이브러리
+    implementation 'com.github.kamrul3288:Expandable-Recyclerview-List-Android:1.0.2'
+    implementation 'com.github.emircanpekyurek:ExpandableRecyclerView:1.0.1'
+    // 뷰페이저
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    //코루틴
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
 }

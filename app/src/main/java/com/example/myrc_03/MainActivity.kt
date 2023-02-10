@@ -17,6 +17,14 @@ class MainActivity : AppCompatActivity() {
 
         Log.d(TAG, "MainActivity - onCreate() called")
 
+        if (savedInstanceState == null ) {
+            // Activity가 재생성될 시 첫 번째 화면을 표시할 필요가 없기때문에
+            // 앱이 처음 실행되었는지 여부를 확인한다.
+            binding.bottomNav.selectedItemId = R.id.menu_home
+        }
+
+        Log.d(TAG, "MainActivity - onCreate() called")
+
     }
 
     /* 레이아웃 설정 */
@@ -38,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_talk -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame_layout, TalkFragment())
+                        .replace(R.id.frame_layout, ChatFragment())
                         .commit()
                     true
                 }

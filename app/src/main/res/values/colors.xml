@@ -4,4 +4,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="navigation_color">#FFF9F9FA</color>
+    <color name="gray">#FF9f9f9f</color>
+    <color name="wallet">#FFfae64c</color>
+    <color name="viewpager_unselect">#FFd1d1d1</color>
+    <color name="viewpager_select">#FF979797</color>
+    <color name="background_gray">#FFF0F0F0</color>
 </resources>
