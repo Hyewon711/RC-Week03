@@ -2,4 +2,19 @@
     <string name="app_name">카카오톡</string>
     <string name="count_indicator_text">"%1$d/%2$d"</string>
     <string name="viewpager2_banner">%1$d/%2$d +</string>
+
+    <style name="tabTextSizeBold" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="chipCustom" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-condensed-light</item>
+    </style>
+    <style name="ChipTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabBackground">@drawable/selector_tab</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
 </resources>

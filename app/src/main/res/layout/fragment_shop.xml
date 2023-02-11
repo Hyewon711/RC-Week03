@@ -30,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:text="쇼핑"
                 android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -261,123 +260,10 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_view"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/card_top_rv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_marginTop="8dp">
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="20dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="5dp">
-                        <ImageView
-                            android:id="@+id/card_logo"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/test_img"
-                            android:layout_marginBottom="5dp"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintBottom_toTopOf="@id/card_guideline"/>
-
-                        <TextView
-                            android:id="@+id/card_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="타이틀명"
-                            android:textSize="10sp"
-                            android:includeFontPadding="false"
-                            android:textColor="@color/black"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginBottom="5dp"
-                            app:layout_constraintStart_toEndOf="@id/card_logo"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="@id/card_guideline" />
-
-                        <TextView
-                            android:id="@+id/card_name_sub"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="서브내용 〉"
-                            android:textSize="10sp"
-                            android:includeFontPadding="false"
-                            android:textColor="@color/black"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginBottom="5dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="@id/card_guideline" />
-                        <View
-                            android:id="@+id/card_guideline"
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/background_gray"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                    <TextView
-                        android:id="@+id/card_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="쇼핑 제목"
-                        android:includeFontPadding="false"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"/>
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/card_rv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp"
-                        android:nestedScrollingEnabled="false" />
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp">
-                        <Button
-                            android:id="@+id/before_btn"
-                            android:layout_width="60dp"
-                            android:layout_height="40dp"
-                            android:text="〈 "
-                            android:textSize="12sp"
-                            android:background="@drawable/custom_card_button"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintEnd_toStartOf="@id/card_list_tv"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
-                        <TextView
-                            android:id="@+id/card_list_tv"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:text="1/20"
-                            android:textSize="12sp"
-                            android:gravity="center"
-                            android:includeFontPadding="false"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
-                        <Button
-                            android:id="@+id/after_btn"
-                            android:layout_width="60dp"
-                            android:layout_height="40dp"
-                            android:text=" 〉"
-                            android:textSize="12sp"
-                            android:background="@drawable/custom_card_button"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/card_list_tv"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.appcompat.widget.LinearLayoutCompat>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>

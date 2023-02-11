@@ -102,12 +102,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:padding="10dp"
                     android:src="@drawable/ad_img1"/>
-
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/updateListRv"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:nestedScrollingEnabled="false" />
 
                 <androidx.recyclerview.widget.RecyclerView

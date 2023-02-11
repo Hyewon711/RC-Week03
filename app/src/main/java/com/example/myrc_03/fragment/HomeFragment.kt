@@ -61,8 +61,7 @@ class HomeFragment : Fragment() {
                     "https://image.fmkorea.com/files/attach/new3/20221111/4366334374/716547527/5204698966/423dbeff036e95c59a8b6fb4790cd6c6.png"),
                 UpdateList(
                     "장혜원",
-                    "https://image.fmkorea.com/files/attach/new3/20221111/4366334374/716547527/5204698966/423dbeff036e95c59a8b6fb4790cd6c6.png"
-                ))))
+                    "https://image.fmkorea.com/files/attach/new3/20221111/4366334374/716547527/5204698966/423dbeff036e95c59a8b6fb4790cd6c6.png"))))
 
         updateadapter.setExpandCollapseListener(object : ExpandCollapseListener {
             override fun onListItemExpanded(position: Int) {
@@ -73,7 +72,6 @@ class HomeFragment : Fragment() {
             }
 
         })
-
         binding.updateListRv.setHasFixedSize(false)
         binding.updateListRv.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.updateListRv.adapter = updateadapter
